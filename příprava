@@ -1,0 +1,55 @@
+import java.util.Random;
+
+public class HodMinci {
+    public static void main(String[] args) {
+        Random rng = new Random();
+        int hodMinci = rng.nextInt(2);
+
+        if (hodMinci == 0) {
+            System.out.println("Orel");
+        } else {
+            System.out.println("Panna");
+        }
+    }
+}
+
+public class Random {
+    public static void main(String[] args) {
+        int c = (int) (Math.random() * (max - min) + min);
+        Random r = new Random();
+        int cisloA = r.nextInt(origin:1, bound:7);
+
+        int cisloB = r.nextInt(origin:1, bound:7);
+
+        if (cisloB == cisloA || cisloA + cisloB > 10) {
+            System.out.println("Vyhrál jsi");
+        }
+        System.out.println(cisloA + "\n" + cisloB);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        int day = 5;
+        switch (day) {
+            case 5:
+                System.out.println("Je sobota");
+                break;
+            case 6:
+                System.out.println("Je nedele");
+                break;
+            default:
+                System.out.println("Je pracovni tyden");
+                break;
+        }
+    }
+}
+
+// ctrl + alt + l -> dat vzdy hlavne pri testu !
+
+// 3 zadani v testu ------->
+// podminka AND ten priklad kde je vyska a vaha
+// podminka OR + Random
+//Priklad se slevou + scenar > neco jako z pl cviceni 4 a 5 !! je to na github pana ucitele
+
+//vse doma udelat a ulozit do onedrive atd at to muzu pouzit k testu, nemzuzu telefon !
